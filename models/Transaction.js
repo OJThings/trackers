@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const TransactionSchema = new mongoose.Schema({
-  text: {
+  name: {
     type: String,
     trim: true,
-    required: [true, 'Please add some text']
+    required: [true, 'Please add some name']
   },
   amount: {
     type: Number,
